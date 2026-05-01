@@ -2608,7 +2608,7 @@
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 
   const CAMERA_MODELS = {
-    "CAM-001": "https://www.dropbox.com/scl/fi/ncf3z16o2qohg4ppikdcd/canon_g7x__camera_model.glb?rlkey=8wwy55dr5arvhxqksketv3z9u&st=sezkx6ed&dl=1",
+    "CAM-001": "https://corsproxy.io/?https://drive.google.com/uc?export=download&id=1F2l2F9OFjAK-EbXCQAFA2Dnq8TbdzUIo&confirm=t",
     /* add more cameras as you upload their models:
     "CAM-002": "https://raw.githubusercontent.com/digicamventure/digicamventure.github.io/main/models/your-next-camera.glb",
     "CAM-003": "https://raw.githubusercontent.com/digicamventure/digicamventure.github.io/main/models/another-camera.glb",
@@ -2775,7 +2775,7 @@
     if (!gltfRenderer) {
       gltfRenderer = new T.WebGLRenderer({ canvas, antialias: true, alpha: true });
       gltfRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-      gltfRenderer.outputEncoding     = T.sRGBEncoding;
+      gltfRenderer.outputColorSpace      = 'srgb';
       gltfRenderer.toneMapping        = T.ACESFilmicToneMapping;
       gltfRenderer.toneMappingExposure = 1.15;
       gltfRenderer.shadowMap.enabled  = true;
