@@ -1,1 +1,1 @@
-# digicamventure.github.io
+# dgclicks.github.io
